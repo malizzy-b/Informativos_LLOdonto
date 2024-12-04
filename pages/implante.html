@@ -35,15 +35,13 @@
     }
   </style>
 </head>
-
-
 <body class="bg-green-100">
 
   <!-- Top Section -->
   <header class="bg-green-500 text-white py-6">
     <div class="container mx-auto px-4 text-center">
         <div class="flex flex-row gap-8">
-            <img src="/img/logo.jpg" alt="Logo LL Odontologia" href="/info.html" class="rounded-full w-12 h-12">
+            <img href="/info.html" src="/img/logo.jpg" alt="Logo LL Odontologia"  class="rounded-full w-12 h-12">
             <h1 class="font-bold text-2xl">LL ODONTOLOGIA</h1>
         
         </div>
@@ -55,8 +53,8 @@
   <!-- Navigation Menu -->
   <nav class="bg-white shadow-md overflow-x-auto">
     <div class="container mx-auto px-4">
-      <ul class="flex justify-start md:justify-center lg:justify-center space-x-8 py-4 text-green-700 font-semibold">
-        <li><a href="/pages/implante.html" class="hover:text-green-500">Implante</a></li>
+      <ul class="flex justify-center space-x-8 py-4 text-green-700 font-semibold">
+        <li><a href="#implante" class="hover:text-green-500">Implante</a></li>
         <li><a href="#reabertura" class="hover:text-green-500">Reabertura</a></li>
         <li><a href="#exodontia" class="hover:text-green-500">Exodontia</a></li>
         <li><a href="#clareamento" class="hover:text-green-500">Clareamento</a></li>
@@ -70,26 +68,28 @@
   <!-- Main Content -->
   <main class="container mx-auto px-4 py-8">
     <!-- Section 1 -->
-    <div class="text-center items-center flex-col md:flex-row lg:flex-row">
+    <div class="text-center flex-col md:flex-row lg:flex-row">
         <img>
-        <h1 class="font-bold text-2xl">Informe-se</h1>
+        <h1 class="font-bold text-2xl">Saiba Mais Sobre o Pós-Operatório do seu Implate</h1>
         
-        <p class="p-8 md:ml-48 md:w-7/12 lg:ml-64 lg:w-7/12 text-justify justify-center items-center">Bem-vindo(a) ao nosso guia completo de cuidados pós-operatórios. Na LL Odontologia, estamos comprometidos em garantir a sua recuperação tranquila e segura após qualquer procedimento. Aqui você encontrará informações detalhadas e confiáveis sobre os cuidados necessários, desde o período imediatamente após a cirurgia até a recuperação completa. Navegue pelas nossas seções para encontrar informações específicas sobre seu procedimento e entre em contato conosco caso tenha alguma dúvida. Sua saúde e bem-estar são nossa prioridade.
+        <p class="p-8 w-7/12 justify-center items-center">Bem-vindo(a) ao nosso guia completo de cuidados pós-operatórios. Na LL Odontologia, estamos comprometidos em garantir a sua recuperação tranquila e segura após qualquer procedimento. Aqui você encontrará informações detalhadas e confiáveis sobre os cuidados necessários, desde o período imediatamente após a cirurgia até a recuperação completa. Navegue pelas nossas seções para encontrar informações específicas sobre seu procedimento e entre em contato conosco caso tenha alguma dúvida. Sua saúde e bem-estar são nossa prioridade.
+
         </p>
-
         
-        
-        <div class="flex flex-col justify-center items-center">
-          <p>Agende sua Consulta ou Tire suas Dúvidas</p>
-          <p class="font-bold">(11) 993401-7340</p>
-        </div>
-
-        <div class="items-center m-8">
-          <a href="https://api.whatsapp.com/send?phone=5511912345678&text=Olá!%20Vi%20seu%20anúncio." target="_blank"><button onclick="showWhatsappPopup()"><img src="/img/wpp.png" alt="" class=" w-12 h-12"></button></a>
-        </div>
     </div>
 
-    
+    <button onclick="showWhatsappPopup()">Abrir Pop-up WhatsApp</button>
+
+<div id="whatsapp-popup">
+  <div id="whatsapp-popup-content">
+    <h2>Entre em contato!</h2>
+    <p>Clique no botão abaixo para abrir o WhatsApp.</p>
+    <a href="https://api.whatsapp.com/send?phone=5511934017340&text=Olá!%20Vi%20seu%20anúncio." target="_blank">
+      <button>Abrir WhatsApp</button>
+    </a>
+    <span id="whatsapp-popup-close" onclick="closeWhatsappPopup()">X</span>
+  </div>
+</div>
 
 
   </main>
@@ -111,4 +111,3 @@
     </script>
 </body>
 </html>
-
